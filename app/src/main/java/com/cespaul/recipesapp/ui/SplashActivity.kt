@@ -1,8 +1,9 @@
-package com.cespaul.recipesapp
+package com.cespaul.recipesapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.cespaul.recipesapp.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
