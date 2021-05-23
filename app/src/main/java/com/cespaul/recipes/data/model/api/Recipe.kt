@@ -1,4 +1,4 @@
-package com.cespaul.recipesapp.data.model.api
+package com.cespaul.recipes.data.model.api
 
 import com.google.gson.annotations.SerializedName
 
@@ -17,6 +17,6 @@ data class Recipe(
     val instructions: String,
     @SerializedName("difficulty")
     val difficulty: Int,
-    @SerializedName("similarReciASpp")
+    @SerializedName("similar")
     val similar: ArrayList<RecipeBrief>
 )

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/base_grid_size"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/recipeListImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/ic_image_24"
+        app:placeholderImage="@drawable/ic_image_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/recipeItemListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        tools:text="@string/toolRecipeItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recipeListImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recipeItemListDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_grid_size"
+        android:layout_marginTop="@dimen/base_grid_size"
+        android:maxLines="2"
+        tools:text="@string/toolRecipeItemDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="@id/recipeListImage"
+        app:layout_constraintStart_toEndOf="@+id/recipeListImage"
+        app:layout_constraintTop_toBottomOf="@+id/recipeItemListTitle" />
+
+    <TextView
+        android:id="@+id/recipeItemListInstruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_grid_size"
+        android:layout_marginTop="@dimen/base_grid_size"
+        app:layout_constraintBottom_toBottomOf="@+id/recipeListImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="@id/recipeListImage"
+        app:layout_constraintStart_toEndOf="@+id/recipeListImage"
+        app:layout_constraintTop_toBottomOf="@+id/recipeItemListDescription"
+        tools:text="@string/toolRecipeItemInstructions" />
+
+
+    <TextView
+        android:id="@+id/recipeListDifficulty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_grid_size"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recipeListImage"
+        app:layout_constraintStart_toStartOf="@+id/recipeListImage"
+        app:layout_constraintTop_toBottomOf="@+id/recipeListImage"
+        tools:text="@string/toolRecipeItemDifficulty" />
+
+    <TextView
+        android:id="@+id/recipeListLastUpdated"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_grid_size"
+        android:gravity="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeListImage"
+        tools:text="@string/toolRecipeItemLatestUpdated" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

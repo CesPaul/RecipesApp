@@ -1,4 +1,4 @@
-package com.cespaul.recipesapp.data.model.api
+package com.cespaul.recipes.data.model.api
 
 import com.google.gson.annotations.SerializedName
 

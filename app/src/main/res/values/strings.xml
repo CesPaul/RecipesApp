@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">RecipesApp</string>
+
+
+    <!--  Design  -->
+    <string name="toolRecipeItemName">Title</string>
+    <string name="toolRecipeItemLatestUpdated">23.05.2021 22:22</string>
+    <string name="toolRecipeItemDescription">Description</string>
+    <string name="toolRecipeItemInstructions">Instructions</string>
+    <string name="toolRecipeItemDifficulty">Difficulty</string>
 </resources>
